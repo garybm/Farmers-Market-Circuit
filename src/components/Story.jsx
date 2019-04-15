@@ -1,23 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Icon from "./Icon";
 
 function Story(props){
-  var myStyles ={
-    backgroundColor:'purple'
-  }
   return (
-  	<div style={myStyles}>
-  		<h3>{props.location}-{props.names}</h3>
-      <p><em>{props.issue}</em></p>
-      <hr/>
+    <div style={{display:'flex'}}>
+      <Icon color={props.color}/>
+      <p style={{fontWeight:'bold'}}>{props.title}</p>
+      <p>{props.text}</p>
     </div>
-  	);
+    )
 }
-
-Story.propTypes={
-	names: PropTypes.string.isRequired,
-	location: PropTypes.string.isRequired,
-	issue: PropTypes.string
-};
-
 export default Story;

@@ -1,8 +1,12 @@
 import React from 'react';
+import Icon from './Icon';
+
 
 function Profile(){
 	return (
-		<h1>Help Queue</h1>
+		<div>
+			<Icon color="blue"/>
+		</div>
 	);
 }
 

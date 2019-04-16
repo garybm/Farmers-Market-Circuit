@@ -1,25 +1,20 @@
 import React from 'react';
-import Profile from './Profile';
-import StoryList from './StoryList';
-import Nav from './Nav';
-import FriendList from './FriendList';
+import Locations from './Locations';
+import Seasons from './Seasons';
+
 
 function App(){
-  var gridStyle={
-    display: 'grid',
-    gridTemplateColumns: '0.75fr 1fr 0.5fr'
+  var styles={
+    width:'100vw',
+    margin:'0 auto'
   };
 
   return (
-    <div>
-      <Nav/>
-      <div style={gridStyle}>
-        <Profile/>
-        <StoryList/>
-        <FriendList/>
-      </div>
+    <div style={styles}>
+      <Locations/>
+      <Seasons/>
     </div>
-  );
+  )
 }
 
 export default App;

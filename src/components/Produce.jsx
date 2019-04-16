@@ -17,7 +17,6 @@ function Produce(props){
   if(props.month === props.currentMonth){
     styles.backgroundColor='yellow'
   }
-
   return (
     <div style={styles}>
       <h2>{props.month}</h2>

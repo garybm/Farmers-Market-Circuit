@@ -2,9 +2,9 @@ import React from 'react';
 import Friend from './Friend';
 
 function FriendList(){
-	return (
-		<Friend/>		
-		)
+  return (
+    <Friend/>		
+  );
 }
 
 export default FriendList;

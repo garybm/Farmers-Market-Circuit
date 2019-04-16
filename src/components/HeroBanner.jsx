@@ -23,6 +23,15 @@ function HeroBanner(){
     <div style={{position:'relative'}}>
       <div style={heroGradient}></div>
       <div style={centered}>
+        <style jsx>{`
+            h1 {
+              font-size: 60px;
+            }
+            h2 {
+              font-size: 40px;
+            }
+              `}
+        </style>
         <h1>Avery's Organics</h1>
         <h3>Farmers Market Schedule</h3>
       </div>

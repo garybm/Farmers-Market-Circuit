@@ -7,7 +7,7 @@ function Locations(){
   var styles={
     display:'grid',
     gridTemplateColumns:'repeat(4,1fr)',
-    border: '1px solid green',
+    border: '1px solid #717325',
     textAlign: 'center',
   }
   var currentDate=new Date();

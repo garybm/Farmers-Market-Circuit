@@ -6,13 +6,20 @@ function Location(props){
     display:'grid',
     gridTemplateColumns:'repeat(4,1fr)',
     textAlign: 'center',
-    border: '1px solid green',
+    border: '1px solid #717325'
   }
   if (props.day === props.currentDay) {
-    styles.backgroundColor='yellow';
+    styles.backgroundColor='#FFA65E';
   }
   return (
-    <div style={styles}>
+    <div className="days" style={styles}>
+      <style jsx>{`
+          .days:hover {
+            background-color: #DBCEC4;
+            cursor: pointer;
+          }
+            `}
+      </style>
       <p>{props.day}</p>
       <p>{props.location}</p>
       <p>{props.hours}</p>

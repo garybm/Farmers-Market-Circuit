@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Produce(props){
   var styles={
     textAlign:'center',
-    border: '2px solid green'
+    border: '4px solid #717325'
   };
   var grid={
     listStyleType:'none',
@@ -15,13 +15,13 @@ function Produce(props){
     grid.gridTemplateColumns= '1fr 1fr'
     }
   if(props.month === props.currentMonth){
-    styles.backgroundColor='yellow'
+    styles.backgroundColor='#FFA65E'
   }
   return (
     <div className="monthSelect" style={styles}>
       <style jsx>{`
           .monthSelect:hover {
-            background-color: yellow;
+            background-color: #DBCEC4;
             cursor: pointer;
           }
             `}

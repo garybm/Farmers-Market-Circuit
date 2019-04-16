@@ -44,10 +44,14 @@ function Locations(){
   var styles={
     display:'grid',
     gridTemplateColumns:'repeat(4,1fr)',
-    border: '1px solid green'
+    border: '1px solid green',
+    textAlign: 'center',
   }
+  var currentDate=new Date();
+  var weekDay=currentDate.getDay();
+  var currentDay=marketSchedule[weekDay].day;
   return (
-    <div>
+    <div style={{marginBottom:'25px'}}>
       <div style={styles}>
         <h2>Day</h2>
         <h2>Location</h2>
@@ -58,6 +62,7 @@ function Locations(){
       {marketSchedule.map((place, i)=>{
   		return <Location
                 day={place.day}
+                currentDay={currentDay}
                 location={place.location}
                 hours={place.hours}
                 booth={place.booth}

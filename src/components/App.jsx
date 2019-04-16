@@ -5,8 +5,8 @@ import Seasons from './Seasons';
 
 function App(){
   var styles={
-    width:'100vw',
-    margin:'0 auto'
+    width:'90vw',
+    margin:'10px auto'
   };
 
   return (

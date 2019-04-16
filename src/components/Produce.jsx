@@ -2,17 +2,32 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Produce(props){
-  console.log(props);
+  var styles={
+    textAlign:'center',
+    border: '2px solid green'
+  };
+  var grid={
+    listStyleType:'none',
+    padding:'0'
+  }
+  if(props.selection.length>10){
+    grid.display='grid',
+    grid.gridTemplateColumns= '1fr 1fr'
+    }
+  if(props.month === props.currentMonth){
+    styles.backgroundColor='yellow'
+  }
+
   return (
-    <div>
+    <div style={styles}>
       <h2>{props.month}</h2>
-      <div>
+      <ul style={grid}>
         {
           props.selection.map((food,i)=>{
-          return <p key={i}>{food}</p>
+          return <li key={i}>{food}</li>
           })
         }
-      </div>
+      </ul>
     </div>
   );
 }

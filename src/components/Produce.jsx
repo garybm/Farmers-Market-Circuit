@@ -18,7 +18,14 @@ function Produce(props){
     styles.backgroundColor='yellow'
   }
   return (
-    <div style={styles}>
+    <div className="monthSelect" style={styles}>
+      <style jsx>{`
+          .monthSelect:hover {
+            background-color: yellow;
+            cursor: pointer;
+          }
+            `}
+      </style>
       <h2>{props.month}</h2>
       <ul style={grid}>
         {

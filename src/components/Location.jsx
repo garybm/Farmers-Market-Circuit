@@ -7,7 +7,7 @@ function Location(props){
     gridTemplateColumns:'repeat(4,1fr)',
     textAlign: 'center',
     border: '1px solid #717325'
-  }
+  };
   if (props.day === props.currentDay) {
     styles.backgroundColor='#FFA65E';
   }
@@ -32,7 +32,8 @@ Location.propTypes = {
   day: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   hours: PropTypes.string.isRequired,
-  booth: PropTypes.string.isRequired
+  booth: PropTypes.string.isRequired,
+  currentDay: PropTypes.string.isRequired
 };
 
 export default Location;

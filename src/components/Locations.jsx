@@ -9,7 +9,7 @@ function Locations(){
     gridTemplateColumns:'repeat(4,1fr)',
     border: '1px solid #717325',
     textAlign: 'center',
-  }
+  };
   var currentDate=new Date();
   var weekDay=currentDate.getDay();
   var currentDay=marketSchedule[weekDay].day;
@@ -25,12 +25,12 @@ function Locations(){
 
       {marketSchedule.map((place, i)=>{
   		return <Location
-                day={place.day}
-                currentDay={currentDay}
-                location={place.location}
-                hours={place.hours}
-                booth={place.booth}
-                key={i}/>;
+          day={place.day}
+    currentDay={currentDay}
+    location={place.location}
+    hours={place.hours}
+    booth={place.booth}
+    key={i}/>;
   	  })}
     </div>
   	);

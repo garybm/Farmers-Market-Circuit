@@ -15,7 +15,7 @@ function App(){
       <Locations/>
       <Seasons/>
     </div>
-  )
+  );
 }
 
 export default App;

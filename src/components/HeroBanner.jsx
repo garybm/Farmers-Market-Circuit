@@ -10,15 +10,16 @@ function HeroBanner(){
     left:'0',
     right:'0',
     zIndex:'2'
-  }
+  };
   var centered={
     position:'absolute',
     top:'50%',
     left:'50%',
     transform:'translate(-50%,-50%)',
     zIndex:'5',
-    color:'white'
-  }
+    color:'white',
+    textAlign: 'center'
+  };
   return(
     <div style={{position:'relative'}}>
       <div style={heroGradient}></div>
@@ -37,7 +38,7 @@ function HeroBanner(){
       </div>
       <img  style={{width:'100%'}} src={veggies}/>
     </div>
-  )
+  );
 }
 
 export default HeroBanner;

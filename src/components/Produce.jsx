@@ -36,7 +36,7 @@ function Produce(props){
           .container:hover .overlay {
             opacity: 1;
             background-color: #DBCEC4;
-            cursor: pointer;
+            cursor: pointer;  
           }
           `}
         </style>
